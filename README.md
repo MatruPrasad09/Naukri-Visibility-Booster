@@ -26,12 +26,18 @@ graph TD
     D -->|Get Session| E[Playwright Browser]
     C --> F[PDF Injection]
     F -->|Unique Hash| E
-    E -->|Verify 'Uploaded Today']| G[Screenshot Audit]
+    E -->|Verify 'Uploaded Today'| G[Screenshot Audit]
     G --> H[Telegram Bot API]
     H -->|Photo Alert| I[Your Phone]
 ```
 
 ---
+
+
+## 🌍 Portability & Public Use
+This project is built to be **portable**. 
+- **No Hardcoded Paths:** The script dynamically detects its folder location, making it easy to clone and run on any Mac.
+- **Generic Output:** Generated resumes are named `Resume_Updated_MonthYear.pdf` by default for a clean, professional look that works for anyone.
 
 ## 🚀 Quick Setup Guide
 

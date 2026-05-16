@@ -18,7 +18,7 @@ from reportlab.pdfgen import canvas
 from pypdf import PdfReader, PdfWriter
 
 # --- Configuration ---
-WORKSPACE_DIR = "/Users/matruprasadmohanty/Naukri_CareerGuard"
+WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(WORKSPACE_DIR, "state.db")
 LOCK_FILE = os.path.join(WORKSPACE_DIR, "lock.txt")
 MASTER_RESUME = os.path.join(WORKSPACE_DIR, "master_resume.pdf")
@@ -121,7 +121,7 @@ def get_session_from_keychain():
 
 def get_dynamic_filename():
     month_year_str = datetime.now().strftime("%B%Y") # e.g., May2026
-    return os.path.join(WORKSPACE_DIR, f"MatruPrasadMohanty_Resume_{month_year_str}.pdf")
+    return os.path.join(WORKSPACE_DIR, f"Resume_Updated_{month_year_str}.pdf")
 
 def inject_invisible_text():
     logger.info("Injecting invisible text to PDF...")
