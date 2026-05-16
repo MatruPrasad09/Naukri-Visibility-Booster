@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.naukri.careerguard</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>caffeinate</string>
+        <string>-i</string>
+        <string>/Users/matruprasadmohanty/Naukri_CareerGuard/venv/bin/python3</string>
+        <string>/Users/matruprasadmohanty/Naukri_CareerGuard/updater.py</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <array>
+        <!-- Run at 10:30 AM -->
+        <dict>
+            <key>Hour</key>
+            <integer>10</integer>
+            <key>Minute</key>
+            <integer>30</integer>
+        </dict>
+        <!-- Run at 03:30 PM -->
+        <dict>
+            <key>Hour</key>
+            <integer>15</integer>
+            <key>Minute</key>
+            <integer>30</integer>
+        </dict>
+    </array>
+
+    <key>StandardOutPath</key>
+    <string>/Users/matruprasadmohanty/Naukri_CareerGuard/logs/launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/matruprasadmohanty/Naukri_CareerGuard/logs/launchd.err</string>
+    
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

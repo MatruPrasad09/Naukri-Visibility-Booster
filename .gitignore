@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+audit/
+state.db
+lock.txt
+master_resume.pdf
+MatruPrasadMohanty_*.pdf
+logs/

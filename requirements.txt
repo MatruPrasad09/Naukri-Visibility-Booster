@@ -1,0 +1,9 @@
+charset-normalizer==3.4.7
+greenlet==3.2.5
+loguru==0.7.3
+pillow==11.3.0
+playwright==1.59.0
+pyee==13.0.1
+pypdf==6.11.0
+reportlab==4.5.1
+typing_extensions==4.15.0
