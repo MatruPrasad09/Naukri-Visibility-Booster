@@ -1,4 +1,4 @@
-# 🛡️ Naukri CareerGuard
+# 🛡️ Naukri Visibility Booster
 
 **CareerGuard** is a stealthy, local-first automation tool designed to keep your Naukri profile at the absolute top of recruiter search results. It uses dynamic PDF injection to satisfy the "last updated" algorithm without visual changes to your resume.
 
